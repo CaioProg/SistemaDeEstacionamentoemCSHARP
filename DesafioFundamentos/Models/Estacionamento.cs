@@ -37,7 +37,7 @@ namespace DesafioFundamentos.Models
 
                 decimal valorTotal = precoInicial + (precoPorHora * horas); 
 
-                // TODO: Remover a placa digitada da lista de veículos 
+                // TODO: Remover a placa digitada da lista de veículos
 
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
                 veiculos.Remove(placa);
@@ -55,7 +55,10 @@ namespace DesafioFundamentos.Models
             {
                 Console.WriteLine("Os veículos estacionados são:");
                 // TODO: Realizar um laço de repetição, exibindo os veículos estacionados
-                // *IMPLEMENTE AQUI*
+                foreach(string listveiculos in veiculos)
+                {
+                    Console.WriteLine(listveiculos);
+                }
             }
             else
             {
